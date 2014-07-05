@@ -38,6 +38,10 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/u8160/proprietary/lib/hw/sensors.default.so:obj/lib/hw/sensors.default.so \
     vendor/huawei/u8160/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so \
     vendor/huawei/u8160/proprietary/lib/libaudioeq.so:obj/lib/libaudioeq.so \
+    vendor/huawei/u8160/proprietary/lib/libauth.so:system/lib/libauth.so \
+    vendor/huawei/u8160/proprietary/lib/libauth.so:obj/lib/libauth.so \
+    vendor/huawei/u8160/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so \
+    vendor/huawei/u8160/proprietary/lib/libcommondefs.so:obj/lib/libcommondefs.so \
     vendor/huawei/u8160/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/huawei/u8160/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/huawei/u8160/proprietary/lib/libcm.so:system/lib/libcm.so \
@@ -66,14 +70,52 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/u8160/proprietary/lib/libmmprocess.so:obj/lib/libmmprocess.so \
     vendor/huawei/u8160/proprietary/lib/libnv.so:system/lib/libnv.so \
     vendor/huawei/u8160/proprietary/lib/libnv.so:obj/lib/libnv.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAacEnc.so:obj/lib/libOmxAacEnc.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAacDec.so:obj/lib/libOmxAacDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAdpcmDec.so:system/lib/libOmxAdpcmDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAdpcmDec.so:obj/lib/libOmxAdpcmDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAmrEnc.so:system/lib/libOmxAmrEnc.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAmrEnc.so:obj/lib/libOmxAmrEnc.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAmrDec.so:system/lib/libOmxAmrDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAmrDec.so:obj/lib/libOmxAmrDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAmrRtpDec.so:system/lib/libOmxAmrRtpDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAmrRtpDec.so:obj/lib/libOmxAmrRtpDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAmrwbDec.so:system/lib/libOmxAmrwbDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxAmrwbDec.so:obj/lib/libOmxAmrwbDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxEvrcEnc.so:obj/lib/libOmxEvrcEnc.so \
     vendor/huawei/u8160/proprietary/lib/libOmxH264Dec.so:system/lib/libOmxH264Dec.so \
     vendor/huawei/u8160/proprietary/lib/libOmxH264Dec.so:obj/lib/libOmxH264Dec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxMp3Dec.so:system/lib/libOmxMp3Dec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxMp3Dec.so:obj/lib/libOmxMp3Dec.so \
     vendor/huawei/u8160/proprietary/lib/libOmxMpeg4Dec.so:system/lib/libOmxMpeg4Dec.so \
     vendor/huawei/u8160/proprietary/lib/libOmxMpeg4Dec.so:obj/lib/libOmxMpeg4Dec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxQcelp13Enc.so:obj/lib/libOmxQcelp13Enc.so \
     vendor/huawei/u8160/proprietary/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so \
     vendor/huawei/u8160/proprietary/lib/libOmxVidEnc.so:obj/lib/libOmxVidEnc.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
+    vendor/huawei/u8160/proprietary/lib/libOmxWmaDec.so:obj/lib/libOmxWmaDec.so \
     vendor/huawei/u8160/proprietary/lib/libOmxWmvDec.so:system/lib/libOmxWmvDec.so \
     vendor/huawei/u8160/proprietary/lib/libOmxWmvDec.so:obj/lib/libOmxWmvDec.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_aacdec_sharedlibrary.so:obj/lib/libomx_aacdec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amreec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_amrenc_sharedlibrary.so:obj/lib/libomx_amreec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_amrdec_sharedlibrary.so:obj/lib/libomx_amrdec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_avcdec_sharedlibrary.so:obj/lib/libomx_avcdec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_m4vdec_sharedlibrary.so:obj/lib/libomx_m4vdec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_mp3dec_sharedlibrary.so:obj/lib/libomx_mp3dec_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_sharedlibrary.so:obj/lib/libomx_sharedlibrary.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_sharedlibrary_qc.so:system/lib/libomx_sharedlibrary_qc.so \
+    vendor/huawei/u8160/proprietary/lib/libomx_sharedlibrary_qc.so:obj/lib/libomx_sharedlibrary_qc.so \
     vendor/huawei/u8160/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
     vendor/huawei/u8160/proprietary/lib/liboncrpc.so:obj/lib/liboncrpc.so \
     vendor/huawei/u8160/proprietary/lib/libpbmlib.so:system/lib/libpbmlib.so \
@@ -101,4 +143,4 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/u8160/proprietary/wifi/firmware_test.bin:system/wifi/firmware_test.bin \
     vendor/huawei/u8160/proprietary/wifi/firmware_test.bin:obj/wifi/firmware_test.bin \
     vendor/huawei/u8160/proprietary/wifi/nvram.txt:system/wifi/nvram.txt \
-    vendor/huawei/u8160/proprietary/wifi/nvram.txt:obj/wifi/nvram.txt \
+    vendor/huawei/u8160/proprietary/wifi/nvram.txt:obj/wifi/nvram.txt
