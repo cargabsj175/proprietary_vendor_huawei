@@ -70,6 +70,38 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/u8160/proprietary/lib/libmmprocess.so:obj/lib/libmmprocess.so \
     vendor/huawei/u8160/proprietary/lib/libnv.so:system/lib/libnv.so \
     vendor/huawei/u8160/proprietary/lib/libnv.so:obj/lib/libnv.so \
+    vendor/huawei/u8160/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
+    vendor/huawei/u8160/proprietary/lib/liboncrpc.so:obj/lib/liboncrpc.so \
+    vendor/huawei/u8160/proprietary/lib/libpbmlib.so:system/lib/libpbmlib.so \
+    vendor/huawei/u8160/proprietary/lib/libpbmlib.so:obj/lib/libpbmlib.so \
+    vendor/huawei/u8160/proprietary/lib/libqcamera.so:system/lib/libqcamera.so \
+    vendor/huawei/u8160/proprietary/lib/libqcamera.so:obj/lib/libqcamera.so \
+    vendor/huawei/u8160/proprietary/lib/libqmi.so:system/lib/libqmi.so \
+    vendor/huawei/u8160/proprietary/lib/libqmi.so:obj/lib/libqmi.so \
+    vendor/huawei/u8160/proprietary/lib/libqueue.so:system/lib/libqueue.so \
+    vendor/huawei/u8160/proprietary/lib/libqueue.so:obj/lib/libqueue.so \
+    vendor/huawei/u8160/proprietary/lib/libril.so:system/lib/libril.so \
+    vendor/huawei/u8160/proprietary/lib/libril.so:obj/lib/libril.so \
+    vendor/huawei/u8160/proprietary/lib/libril-qc-1.so:system/lib/libril-qc-1.so \
+    vendor/huawei/u8160/proprietary/lib/libril-qc-1.so:obj/lib/libril-qc-1.so \
+    vendor/huawei/u8160/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+    vendor/huawei/u8160/proprietary/lib/libril-qcril-hook-oem.so:obj/lib/libril-qcril-hook-oem.so \
+    vendor/huawei/u8160/proprietary/lib/libwms.so:system/lib/libwms.so \
+    vendor/huawei/u8160/proprietary/lib/libwms.so:obj/lib/libwms.so \
+    vendor/huawei/u8160/proprietary/lib/libwmsts.so:system/lib/libwmsts.so \
+    vendor/huawei/u8160/proprietary/lib/libwmsts.so:obj/lib/libwmsts.so \
+    vendor/huawei/u8160/proprietary/wifi/firmware.bin:system/wifi/firmware.bin \
+    vendor/huawei/u8160/proprietary/wifi/firmware.bin:obj/wifi/firmware.bin \
+    vendor/huawei/u8160/proprietary/wifi/firmware_apsta.bin:system/wifi/firmware_apsta.bin \
+    vendor/huawei/u8160/proprietary/wifi/firmware_apsta.bin:obj/wifi/firmware_apsta.bin \
+    vendor/huawei/u8160/proprietary/wifi/firmware_test.bin:system/wifi/firmware_test.bin \
+    vendor/huawei/u8160/proprietary/wifi/firmware_test.bin:obj/wifi/firmware_test.bin \
+    vendor/huawei/u8160/proprietary/wifi/nvram.txt:system/wifi/nvram.txt \
+    vendor/huawei/u8160/proprietary/wifi/nvram.txt:obj/wifi/nvram.txt
+    
+ifneq ($(BOARD_NO_HWCODECS),true)
+
+PRODUCT_COPY_FILES += \
     vendor/huawei/u8160/proprietary/lib/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
     vendor/huawei/u8160/proprietary/lib/libOmxAacEnc.so:obj/lib/libOmxAacEnc.so \
     vendor/huawei/u8160/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
@@ -115,32 +147,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/u8160/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so \
     vendor/huawei/u8160/proprietary/lib/libomx_sharedlibrary.so:obj/lib/libomx_sharedlibrary.so \
     vendor/huawei/u8160/proprietary/lib/libomx_sharedlibrary_qc.so:system/lib/libomx_sharedlibrary_qc.so \
-    vendor/huawei/u8160/proprietary/lib/libomx_sharedlibrary_qc.so:obj/lib/libomx_sharedlibrary_qc.so \
-    vendor/huawei/u8160/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
-    vendor/huawei/u8160/proprietary/lib/liboncrpc.so:obj/lib/liboncrpc.so \
-    vendor/huawei/u8160/proprietary/lib/libpbmlib.so:system/lib/libpbmlib.so \
-    vendor/huawei/u8160/proprietary/lib/libpbmlib.so:obj/lib/libpbmlib.so \
-    vendor/huawei/u8160/proprietary/lib/libqcamera.so:system/lib/libqcamera.so \
-    vendor/huawei/u8160/proprietary/lib/libqcamera.so:obj/lib/libqcamera.so \
-    vendor/huawei/u8160/proprietary/lib/libqmi.so:system/lib/libqmi.so \
-    vendor/huawei/u8160/proprietary/lib/libqmi.so:obj/lib/libqmi.so \
-    vendor/huawei/u8160/proprietary/lib/libqueue.so:system/lib/libqueue.so \
-    vendor/huawei/u8160/proprietary/lib/libqueue.so:obj/lib/libqueue.so \
-    vendor/huawei/u8160/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/huawei/u8160/proprietary/lib/libril.so:obj/lib/libril.so \
-    vendor/huawei/u8160/proprietary/lib/libril-qc-1.so:system/lib/libril-qc-1.so \
-    vendor/huawei/u8160/proprietary/lib/libril-qc-1.so:obj/lib/libril-qc-1.so \
-    vendor/huawei/u8160/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
-    vendor/huawei/u8160/proprietary/lib/libril-qcril-hook-oem.so:obj/lib/libril-qcril-hook-oem.so \
-    vendor/huawei/u8160/proprietary/lib/libwms.so:system/lib/libwms.so \
-    vendor/huawei/u8160/proprietary/lib/libwms.so:obj/lib/libwms.so \
-    vendor/huawei/u8160/proprietary/lib/libwmsts.so:system/lib/libwmsts.so \
-    vendor/huawei/u8160/proprietary/lib/libwmsts.so:obj/lib/libwmsts.so \
-    vendor/huawei/u8160/proprietary/wifi/firmware.bin:system/wifi/firmware.bin \
-    vendor/huawei/u8160/proprietary/wifi/firmware.bin:obj/wifi/firmware.bin \
-    vendor/huawei/u8160/proprietary/wifi/firmware_apsta.bin:system/wifi/firmware_apsta.bin \
-    vendor/huawei/u8160/proprietary/wifi/firmware_apsta.bin:obj/wifi/firmware_apsta.bin \
-    vendor/huawei/u8160/proprietary/wifi/firmware_test.bin:system/wifi/firmware_test.bin \
-    vendor/huawei/u8160/proprietary/wifi/firmware_test.bin:obj/wifi/firmware_test.bin \
-    vendor/huawei/u8160/proprietary/wifi/nvram.txt:system/wifi/nvram.txt \
-    vendor/huawei/u8160/proprietary/wifi/nvram.txt:obj/wifi/nvram.txt
+    vendor/huawei/u8160/proprietary/lib/libomx_sharedlibrary_qc.so:obj/lib/libomx_sharedlibrary_qc.so
+    
+endif
