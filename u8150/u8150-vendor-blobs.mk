@@ -28,3 +28,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/huawei/u8150/proprietary/lib/hw/sensors.u8150.so:system/lib/hw/sensors.u8150.so
+
+PRODUCT_COPY_FILES += \
+    vendor/huawei/u8150/proprietary/xbin/RfTest:system/xbin/RfTest
