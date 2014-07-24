@@ -14,7 +14,8 @@
 
 # All the blobs necessary for U8500
 PRODUCT_COPY_FILES += \
-    vendor/huawei/u8500/proprietary/lib/hw/sensors.u8500.so:system/lib/hw/sensors.u8500.so \
+    vendor/huawei/u8500/proprietary/bin/akmd2:system/bin/akmd2 \
     vendor/huawei/u8500/proprietary/bin/akmd8962:system/bin/akmd8962 \
     vendor/huawei/u8500/proprietary/bin/akmd8975:system/bin/akmd8975 \
+    vendor/huawei/u8500/proprietary/lib/hw/sensors.u8500.so:system/lib/hw/sensors.u8500.so \
     vendor/huawei/u8500/proprietary/etc/AudioFilterU8500.csv:system/etc/AudioFilterU8500.csv

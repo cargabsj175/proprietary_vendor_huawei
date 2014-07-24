@@ -14,6 +14,9 @@
 
 # All the blobs necessary for U8350
 PRODUCT_COPY_FILES += \
+    vendor/huawei/u8350/proprietary/bin/akmd2:system/bin/akmd2 \
+    vendor/huawei/u8350/proprietary/bin/akmd8962:system/bin/akmd8962 \
+    vendor/huawei/u8350/proprietary/bin/akmd8975:system/bin/akmd8975 \
     vendor/huawei/u8350/proprietary/lib/hw/sensors.u8350.so:system/lib/hw/sensors.u8350.so \
     vendor/huawei/u8350/proprietary/etc/AudioFilterU8350.csv:system/etc/AudioFilterU8350.csv
 
