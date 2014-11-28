@@ -16,4 +16,4 @@
 DEVICE_PACKAGE_OVERLAYS := vendor/huawei/evolucion/overlay
 
 $(call inherit-product, vendor/huawei/evolucion/evolucion-vendor-blobs.mk)
-$(call inherit-product, vendor/huawei/evolucion/evolucion-vendor-blobs.mk)
+$(call inherit-product, vendor/huawei/msm7x25-common/evolucion-vendor-blobs.mk)
